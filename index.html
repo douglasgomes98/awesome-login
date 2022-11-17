@@ -13,7 +13,59 @@
     <title>Awesome Login</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <div class="containerLeft">
+        <img src="/logo.svg" alt="logo" />
+      </div>
+      <div class="containerRight">
+        <main>
+          <h2 class="subTitle">Bem vindo de volta</h2>
+          <h1 class="title">Faça login na sua conta</h1>
+
+          <form>
+            <label class="input" for="email">
+              E-mail
+              <input
+                type="email"
+                name="name"
+                id="name"
+                placeholder="Digite seu e-mail"
+              />
+            </label>
+
+            <label class="input" for="password">
+              Senha
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+            </label>
+
+            <div class="containerActions">
+              <label for="remember" class="checkbox">
+                Lembre de mim
+                <input type="checkbox" name="remember" id="remember" />
+              </label>
+
+              <a href="#" class="link">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="loginButton">Entrar</button>
+
+            <button type="button" class="loginGoogleButton">
+              <img src="google.svg" alt="google" />Ou faça login com o Google
+            </button>
+          </form>
+        </main>
+
+        <footer class="footer">
+          <p>Não tem uma conta? <a href="#" class="link">Cadastre-se</a></p>
+        </footer>
+      </div>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

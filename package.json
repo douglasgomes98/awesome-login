@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "yarn clean && yarn vite build && touch dist/.nojekyll",
+    "build": "yarn clean && yarn vite build --base=./ && touch dist/.nojekyll",
     "preview": "vite preview",
     "clean": "rimraf dist"
   },

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "touch out/.nojekyll",
     "build": "vite build",
     "preview": "vite preview"
   },
